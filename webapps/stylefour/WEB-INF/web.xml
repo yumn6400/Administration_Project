@@ -23,11 +23,67 @@
   metadata-complete="true">
 
     <description>
-    Project one
+    Style one
     </description>
-    <display-name>Project One</display-name>
+    <display-name>Style Two</display-name>
     <request-character-encoding>UTF-8</request-character-encoding>
 
+<servlet> 
+<servlet-name>AddDesignation</servlet-name>
+<servlet-class>com.thinking.machines.hr.servlets.AddDesignation</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AddDesignation</servlet-name>
+<url-pattern>/addDesignation</url-pattern>
+</servlet-mapping>
+
+<servlet> 
+<servlet-name>EditDesignation</servlet-name>
+<servlet-class>com.thinking.machines.hr.servlets.EditDesignation</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>EditDesignation</servlet-name>
+<url-pattern>/editDesignation</url-pattern>
+</servlet-mapping>
+
+
+<servlet> 
+<servlet-name>UpdateDesignation</servlet-name>
+<servlet-class>com.thinking.machines.hr.servlets.UpdateDesignation</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>UpdateDesignation</servlet-name>
+<url-pattern>/updateDesignation</url-pattern>
+</servlet-mapping>
+
+
+<servlet> 
+<servlet-name>ConfirmDeleteDesignation</servlet-name>
+<servlet-class>com.thinking.machines.hr.servlets.ConfirmDeleteDesignation</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ConfirmDeleteDesignation</servlet-name>
+<url-pattern>/confirmDeleteDesignation</url-pattern>
+</servlet-mapping>
+
+
+<servlet> 
+<servlet-name>DeleteDesignation</servlet-name>
+<servlet-class>com.thinking.machines.hr.servlets.DeleteDesignation</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>DeleteDesignation</servlet-name>
+<url-pattern>/deleteDesignation</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>NotifyFormResubmission</servlet-name>
+<servlet-class>com.thinking.machines.hr.servlets.NotifyFormResubmission</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>NotifyFormResubmission</servlet-name>
+<url-pattern>/notifyFormResubmission</url-pattern>
+</servlet-mapping>
 
 <servlet>
 <servlet-name>Login</servlet-name>
